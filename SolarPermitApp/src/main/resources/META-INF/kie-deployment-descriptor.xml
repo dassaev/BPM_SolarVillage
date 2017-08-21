@@ -38,6 +38,11 @@
     <environment-entries/>
     <configurations/>
     <required-roles/>
-    <remoteable-classes/>
+    <remoteable-classes>
+        <remoteable-class>gov.solar.permit.Address</remoteable-class>
+        <remoteable-class>gov.solar.permit.Resident</remoteable-class>
+        <remoteable-class>gov.solar.permit.Application</remoteable-class>
+        <remoteable-class>gov.solar.permit.ServiceResponse</remoteable-class>
+    </remoteable-classes>
     <limit-serialization-classes>true</limit-serialization-classes>
 </deployment-descriptor>
