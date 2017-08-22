@@ -79,7 +79,7 @@ $ cp ~/gits/SolarVillage/SolarPermitService/target/SolarPermitService.war \
  ~/lab/bpms/bc/standalone/deployments
 ```
 
-### 2.2.5. Build SolarPermitApp Kjar Component
+#### 2.2.5. Build SolarPermitApp Kjar Component
 
 Using the git repository that we cloned in the previous step, execute the maven install command:
 
@@ -87,8 +87,8 @@ Using the git repository that we cloned in the previous step, execute the maven 
 $ cd ~/gits/SolarVillage/SolarPermitApp
 $ mvn clean install
 ```
-# 3. Execute and Test the Process Within SoapUI
-## 3.1. Setup SoapUI
+## 3. Execute and Test the Process Within SoapUI
+### 3.1. Setup SoapUI
 
 1. Locate ~/gits/SolarVillage/SolarPermitTest folder and open "SoapUI-SolarVillage-workspace" workspace or import "solarvillage-soapui-project" project to your existing workspace.
 2. Setup following project level custom properties:
@@ -105,8 +105,8 @@ TaskInstanceId| The task instance id of HOA Approval human task in current proce
 
 > **Note**: update the "SalesUserId" and "ExecutiveUserId" property values if you have different user ids for "sales" and "executive" role.
 
-## 3.2. Run TestCases
-### 3.2.1. Not HOA Member TestSuite
+### 3.2. Run TestCases
+#### 3.2.1. Not HOA Member TestSuite
 
 This TestSuite includes following TestCases:
 1. Create Container: creates Kie-Server container to run rest of the TestCases.
@@ -117,7 +117,7 @@ This TestSuite includes following TestCases:
 6. Delete Container: deletes Kie-Server container.
 > **Note**: make sure execute "Create Container" testcase before executing other testcases.
 
-### 3.2.2. HOA Member TestSuite
+#### 3.2.2. HOA Member TestSuite
 
 This TestSuite includes following TestCases:
 1. Create Container: creates Kie-Server container to run rest of the TestCases.
