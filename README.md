@@ -75,8 +75,7 @@ The SolarPermitService.war that provide the REST web services can be deployed to
 Copy the target resources from the Maven projects to JBoss Server:
 
 ```
-$ cp ~/gits/SolarVillage/SolarPermitService/target/SolarPermitService.war \
- ~/lab/bpms/bc/standalone/deployments
+$ cp ~/gits/SolarVillage/SolarPermitService/target/SolarPermitService.war ~/lab/bpms/bc/standalone/deployments
 ```
 
 #### 2.2.5. Build SolarPermitApp Kjar Component
@@ -106,6 +105,9 @@ TaskInstanceId| The task instance id of HOA Approval human task in current proce
 > **Note**: update the "SalesUserId" and "ExecutiveUserId" property values if you have different user ids for "sales" and "executive" role.
 
 ### 3.2. Run TestCases
+
+Make sure both Business-Central Server and Kie-Server are up and running, and execute following testcases.
+
 #### 3.2.1. Not HOA Member TestSuite
 
 This TestSuite includes following TestCases:
