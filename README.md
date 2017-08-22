@@ -93,7 +93,7 @@ $ mvn clean install
 1. Locate ~/gits/SolarVillage/SolarPermitTest folder and open "SoapUI-SolarVillage-workspace" workspace or import "solarvillage-soapui-project" project to your existing workspace.
 2. Setup following project level custom properties:
 
-Property  | Value Description | Value or Example 
+Property  | Value Description | Value 
 ------------- | ------------- | -------------
 ContainerId  | Can have any value. | solarcontainer
 EndPointURL| EndPoint URL of Kie-Server. | http://127.0.0.1:8230
@@ -115,6 +115,7 @@ This TestSuite includes following TestCases:
 4. Electric Deny Structural Approval: tests solar permit application process for not HOA member with denied electric and approved structural permit approval result.
 5. Electric Deny Structural Deny: tests solar permit application process for not HOA member with denied electric and structural permit approval result.
 6. Delete Container: deletes Kie-Server container.
+> **Note**: make sure execute "Create Container" testcase before executing other testcases.
 
 ### 3.2.2. HOA Member TestSuite
 
@@ -127,3 +128,4 @@ This TestSuite includes following TestCases:
 6. HOA Approval Electric Deny Structural Approval: tests solar permit application process for HOA member with approved HOA, denied electric and approved structural permit approval result.
 7. HOA Approval Electric Deny Structural Deny: tests solar permit application process for HOA member with approved HOA, denied electric and denied structural permit approval result.
 8. Delete Container: deletes Kie-Server container.
+> **Note**: make sure execute "Create Container" testcase before executing other testcases.
