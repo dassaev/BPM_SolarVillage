@@ -93,13 +93,15 @@ $ mvn clean install
 1. Locate ~/gits/SolarVillage/SolarPermitTest folder and open "SoapUI-SolarVillage-workspace" workspace or import "solarvillage-soapui-project" project to your existing workspace.
 2. Setup following project level custom properties:
 
-ContainerId: can have any value, for example, solarcontainer
-EndPointURL: EndPoint URL of Kie-Server, for example, http://127.0.0.1:8230
-ProcessId: SolarPermitApp.new-order-permitting, this value can't be changed, unless we change the full id of the "New Permit Process" in SolarPermitApp.
-SalesUserId: the user id of the Kie-Server user who has "sales" role associated, for example, salesUser.
-ExecutiveUserId: the user id of the Kie-Server user who has "executive" role associated, for example, executiveUser.
-ProcessInstanceId: 0
-TaskInstanceId: 0
+Property  | Value Description | Value or Example 
+------------- | ------------- | -------------
+ContainerId  | Can have any value. | solarcontainer
+EndPointURL| EndPoint URL of Kie-Server. | http://127.0.0.1:8230
+ProcessId| This value can't be changed, unless we change the full id of the "New Permit Process" in SolarPermitApp. | SolarPermitApp.new-order-permitting
+SalesUserId| The user id of the Kie-Server user who has "sales" role associated. | salesUser
+ExecutiveUserId| The user id of the Kie-Server user who has "executive" role associated. | executiveUser
+ProcessInstanceId| The process instance id of current process, this value will be updaed by the Groovy script. |0
+TaskInstanceId| The task instance id of HOA Approval human task in current process, this value will be updaed by the Groovy script. |0
 
 ## 3.2. Run TestCases
 ### 3.2.1. Not HOA Member TestSuite
