@@ -103,6 +103,8 @@ ExecutiveUserId| The user id of the Kie-Server user who has "executive" role ass
 ProcessInstanceId| The process instance id of current process, this value will be updaed by the Groovy script. |0
 TaskInstanceId| The task instance id of HOA Approval human task in current process, this value will be updaed by the Groovy script. |0
 
+> **Note**: update the "SalesUserId" and "ExecutiveUserId" property values if you have different user ids for "sales" and "executive" role.
+
 ## 3.2. Run TestCases
 ### 3.2.1. Not HOA Member TestSuite
 
